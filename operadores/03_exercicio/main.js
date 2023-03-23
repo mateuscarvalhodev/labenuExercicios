@@ -18,10 +18,10 @@
 // que devolve false*/
 
 
-console.log (5 > 20 && 5 < 2);
-console.log(5 === 5 || 5 === 5);
-console.log(!20 > 50);
-console.log(!20 > 50 || 50 > 60);
+// console.log (5 > 20 && 5 < 2);
+// console.log(5 === 5 || 5 === 5);
+// console.log(!20 > 50);
+// console.log(!20 > 50 || 50 > 60);
 
 
 
@@ -61,27 +61,29 @@ console.log(!20 > 50 || 50 > 60);
 // A média do salário em  seis meses (de janeiro a junho), levando em consideração as comissões e auxílio. (Dica: a média aritmética é calculada somando um grupo de números e dividindo pela quantidade de elementos somados. Por exemplo, a soma de 2, 3, 3, 5, 7 e 10 é 30 dividido por 6, dará média 5.)
 
 
+// -------------------------- FEITO COM FOR --------------------------
+// const baseSalary = 2000;
 
-const baseSalary = 2000;
+// const sales = {
+//     january: 5784.50,
+//     february: 3418.41,
+//     march: 4124.10,
+//     april: 1874,
+//     may: 7000,
+//     june: 9450,
+// }
+// const children = 2;
+// const childcareAllowancePerChildren = 45.50;
 
-const sales = {
-    january: 5784.50,
-    february: 3418.41,
-    march: 4124.10,
-    april: 1874,
-    may: 7000,
-    june: 9450,
-}
-const children = 2;
-const childcareAllowancePerChildren = 45.50;
+// for(const month in sales) {
+// const comission = sales[month] * 0.1;
+// const totalSalary = baseSalary + comission;
+// const inssDiscount = totalSalary * 0.05;
+// const finalSalary = totalSalary - inssDiscount;
+// console.log(`Mês: ${month} - Salário Total: R$${totalSalary.toFixed(2)} - desconto do INSS: R$${inssDiscount.toFixed(2)} - Salário Final: R$${finalSalary.toFixed(2)}`);
+// };
+// --------------------------                    --------------------------
 
-for(const month in sales) {
-const comission = sales[month] * 0.1;
-const totalSalary = baseSalary + comission;
-const inssDiscount = totalSalary * 0.05;
-const finalSalary = totalSalary - inssDiscount;
-console.log(`Mês: ${month} - Salário Total: R$${totalSalary.toFixed(2)} - desconto do INSS: R$${inssDiscount.toFixed(2)} - Salário Final: R$${finalSalary.toFixed(2)}`);
-};
 
 // const comissionJanuary = sales.january * 0.1;
 // const totalSalaryJanuary = baseSalary + comissionJanuary;
@@ -117,5 +119,3 @@ console.log(`Mês: ${month} - Salário Total: R$${totalSalary.toFixed(2)} - desc
 // console.log(`fulano da silva receberá de comissão em Janeiro: R$${sales.january * 0.2}`);
 // console.log(`Será descontado em janeiro pelo INSS o valor de R$${inssDiscountJanuary.toFixed(2)}`);
 // console.log(`janeiro: R$${finalSalaryJanuary.toFixed(2)} Fevereiro: R$${finalSalaryFebruary.toFixed(2)} março: R$${finalSalaryMarch.toFixed(2)} abril: R$${finalSalaryApril.toFixed(2)} maio: R$${finalSalaryMay.toFixed(2)} junho: R$${finalSalaryJune.toFixed(2)}`);
-
-
